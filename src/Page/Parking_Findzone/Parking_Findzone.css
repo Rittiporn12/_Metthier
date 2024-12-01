@@ -1,0 +1,396 @@
+body {
+    font-family: 'EnglishFont', 'ThaiFont', sans-serif;
+    background-color: #473366;
+    user-select: none;
+}
+
+.parking-findzone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+}
+
+.parking-findzone-title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.parking-findzone-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-findzone-name::after {
+    content: 'Find Zone';
+    font-size: 15px;
+}
+
+.parking-findzone-chevron {
+    position: absolute;
+    background-color: transparent;
+    top: 23.5px;
+    border: none;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.findzone-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.findzone-name::after {
+    content: 'Find Zone';
+    font-size: 15px;
+}
+
+.findzone-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+#findzone-menu-button {
+    font-size: 10.5px;
+    padding: 10.5px 17.5px;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+}
+
+.zone-tab {
+    color: rgb(0, 0, 0, 0.66);
+    background-color: white;
+}
+
+.zone-active {
+    color: black;
+    background-color: #F2F2E6;
+    font-weight: bold;
+}
+
+#findzone-menu-button2 {
+    font-size: 10.5px;
+    color: rgb(255, 255, 255, 0.33);
+    padding: 11px 17.5px;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    background-color: rgb(255, 250, 250, 0.11);
+}
+
+#findzone-menu-description {
+    font-size: 11.5px;
+}
+
+.findzone-content {
+    height: 658px;
+    background-color: #F2F2E6;
+}
+
+.findzone-date {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+#findzone-date {
+    font-size: 15px;
+    color: white;
+    background-color: #FD6E2B;
+    transition: background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 1.5rem;
+    z-index: 1;
+}
+
+#findzone-date:hover {
+    background-color: #ff5100;
+}
+
+#findzone-img {
+    position: relative;
+    width: 355px;
+    height: 245px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    z-index: 1;
+}
+
+.findzone-content-title {
+    display: grid;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.findzone-zone {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.findzone-number {
+    font-size: 15px;
+    margin-top: -0.5rem;
+}
+
+.findzone-chance {
+    font-size: 15px;
+    margin-top: -0.7rem;
+    font-weight: 550;
+}
+
+.findzone-signal-container {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15rem;
+    margin-left: 5.1rem;
+}
+  
+.findzone-signal-circle1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #473366;
+}
+
+.findzone-signal-circle2 {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    background-color: #473366;
+    opacity: 77%;
+}
+
+.findzone-signal-circle3 {
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    border-radius: 50%;
+    background-color: #473366;
+    opacity: 55%;
+}
+
+.parking-profile-logout {
+    background-color: #748D8C;
+    border-radius: 10px;
+}
+
+#text-logout {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.findzone-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0px 15px;
+}
+
+.findzone-content-all.shrink {
+    margin-top: -2rem;
+    transform: scale(0.70);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+.findzone-zone.shrink {
+    font-size: 50px;
+    margin-top: -1rem;
+}
+
+.findzone-number.shrink {
+    font-size: 17px;
+    margin-top: -1rem;
+}
+
+.findzone-chance.shrink {
+    font-size: 17px;
+    margin-top: -1rem;
+}
+
+.findzone-data-background-description {
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondary-color-1);
+    margin-top: -18rem;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.findzone-data-background-main {
+    width: 100%;
+    height: 276px;
+    background-color: white;
+    margin-top: -5.5rem;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 15px;
+}
+
+.findzone-date-selectdate {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#findzone-date-input {
+    color: #787878;
+    margin-top: 0.5rem;
+    font-size: 12px;
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#findzone-date-input:focus {
+    outline: none;
+}
+
+.findzone-date-selecttime {
+    margin-top: 0.5rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.findzone-date-time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.select-time-font {
+    font-size: 11px;
+    color: black;
+    padding: 10px 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.findzone-proceed {
+    padding: 15px 50px;
+}
+
+#findzone-proceed{ 
+    font-size: 15px;
+    font-weight: bold;
+    padding: 7px 0px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+#findzone-proceed:hover {
+    background-color: #7152a0;
+}
+
+.btn-check:checked + .btn{
+    background-color: var(--secondary-color-3);
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .findzone-menu {
+        padding: 0px 15px;
+    }
+    .findzone-content {
+        height: 666px;
+        background-color: #F2F2E6;
+    }
+    .findzone-date {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: right;
+        padding: 0px 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .findzone-menu {
+        padding: 0px 15px;
+    }
+    .findzone-content {
+        height: 740px;
+        background-color: #F2F2E6;
+    }
+    #findzone-img {
+        position: relative;
+        width: 355px;
+        height: 245px;
+        margin-top: 7rem;
+        margin-left: 1rem;
+        z-index: 1;
+    }
+    .findzone-date {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: right;
+        padding: 0px 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .findzone-menu {
+        justify-content: space-evenly;
+        padding: 0px 6rem;
+    }
+    .findzone-content {
+        height: 838px;
+        background-color: #F2F2E6;
+    }
+    #findzone-img {
+        position: relative;
+        width: 355px;
+        height: 245px;
+        margin-top: 7rem;
+        margin-left: 1rem;
+        z-index: 1;
+    }
+    .findzone-date {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: right;
+        padding: 0px 140px;
+        cursor: pointer;
+    }
+    .findzone-content-all.shrink {
+        margin-top: -2rem;
+        transform: scale(0.9);
+    }
+    .findzone-data-background-main {
+        padding: 30px 60px;
+        height: 276px;
+    }
+}

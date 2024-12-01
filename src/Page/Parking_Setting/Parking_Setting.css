@@ -1,0 +1,225 @@
+.parking-setting-title {
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.parking-setting-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-setting-name::after {
+    content: 'Setting';
+    font-size: 15px;
+}
+
+.parking-setting-chevron {
+    position: absolute;
+    background-color: transparent;
+    top: 23.5px;
+    border: none;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.parking-setting-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.parking-setting-input i {
+    position: absolute;
+    font-size: 25px;
+    color: #787878;
+    margin-top: 0.35rem;
+    margin-right: 17rem;
+}
+
+#parking-setting-input {
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: #787878;
+    background-color: var(--secondary-color-2);
+}
+
+#parking-setting-input::placeholder {
+    color: #787878;
+}
+
+#parking-setting-input:focus {
+    outline: none;
+}
+
+.parking-setting-background {
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 100px;
+    border-radius: 100px 100px 0px 0px;
+    background-color: var(--secondary-color-1);
+}
+
+.parking-setting-body {
+    margin-top: -5rem;
+    width: 100%;
+    height: 570px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: var(--secondary-color-2);
+    padding: 50px 0px;
+}
+
+.parking-setting-body-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parking-setting-left-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.global-icon {
+    font-size: 30px;
+}
+
+#parking-setting-text {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+#parking-setting-about {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 0px 40px;
+    cursor: pointer;
+}
+
+.chevron-icon-setting {
+    font-size: 30px;
+    color: gray;
+    text-shadow: 1px 0 gray, -1px 0 gray, 0 1px gray, 0 -1px gray;
+}
+
+.parking-setting-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+#parking-setting-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 0px;
+    background-color: #FF3220;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#parking-setting-button:hover {
+    background-color: #ff4c3c;
+}
+
+.trash-icon-setting-button {
+    font-size: 20px;
+}
+
+#parking-setting-button span {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    gap: 0.5rem;
+}
+
+.chevron-icon-setting-button {
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+    margin-left: 18.7rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-setting-body {
+        margin-top: -5rem;
+        width: 100%;
+        height: 578px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: var(--secondary-color-2);
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-setting-body {
+        margin-top: -5rem;
+        width: 100%;
+        height: 652px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: var(--secondary-color-2);
+        padding: 50px 0px;
+    }
+    .parking-setting-input i {
+        position: absolute;
+        font-size: 25px;
+        color: #787878;
+        margin-top: 0.35rem;
+        margin-right: 19.5rem;
+    }
+    .chevron-icon-setting-button {
+        font-size: 30px;
+        position: absolute;
+        color: white;
+        text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+        margin-left: 21.3rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-setting-body {
+        margin-top: -5rem;
+        width: 100%;
+        height: 750px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: var(--secondary-color-2);
+        padding: 50px 0px;
+    }
+    .parking-setting-input i {
+        position: absolute;
+        font-size: 25px;
+        color: #787878;
+        margin-top: 0.35rem;
+        margin-right: 40.5rem;
+    }
+    .chevron-icon-setting-button {
+        font-size: 30px;
+        position: absolute;
+        color: white;
+        text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+        margin-left: 42.3rem;
+    }
+}

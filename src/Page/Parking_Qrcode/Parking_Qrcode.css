@@ -1,0 +1,175 @@
+.parking-qrcode-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+}
+
+.parking-qrcode-title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 1.5rem;
+}
+
+.parking-qrcode-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-qrcode-name::after {
+    content: 'QR Code';
+    font-size: 15px;
+}
+
+.parking-qrcode-body {
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    height: 600px;
+}
+
+.parking-qrcode-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#parking-qrcode-name {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#parking-qrcode-description {
+    font-size: 12px;
+}
+
+.parking-qrcode-camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parking-qrcode-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+#parking-qrcode-about {
+    font-size: 13px;
+    color: #787878;
+}
+
+.parking-qrcode-webcam {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    background-color: #F2F2E6;
+}
+
+.parking-qrcode-cornor1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: -22rem;
+    margin-left: -15.5rem;
+    border-radius: 10px 0px 0px 0px;
+    border-left: 5px solid var(--secondary-color-1);
+    border-top: 5px solid var(--secondary-color-1);
+}
+
+.parking-qrcode-cornor2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: -22rem;
+    margin-left: 15.5rem;
+    border-radius: 0px 10px 0px 0px;
+    border-right: 5px solid var(--secondary-color-1);
+    border-top: 5px solid var(--secondary-color-1);
+}
+
+.parking-qrcode-cornor3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 9rem;
+    margin-left: -15.5rem;
+    border-radius: 0px 0px 0px 10px;
+    border-left: 5px solid var(--secondary-color-1);
+    border-bottom: 5px solid var(--secondary-color-1);
+}
+
+.parking-qrcode-cornor4 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 9rem;
+    margin-left: 15.5rem;
+    border-radius: 0px 0px 10px 0px;
+    border-right: 5px solid var(--secondary-color-1);
+    border-bottom: 5px solid var(--secondary-color-1);
+}
+
+.parking-qrcode-webcam video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.parking-qrcode-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 40px;
+    color: #B3B4AD;
+    transition: background-color 0.3s ease;
+}
+
+.parking-qrcode-file-upload:hover {
+    color: #9a9b94;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-qrcode-body {
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-qrcode-body {
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+        width: 100%;
+        height: 710px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-qrcode-body {
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+        width: 100%;
+        height: 790px;
+    }
+}

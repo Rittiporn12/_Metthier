@@ -1,0 +1,305 @@
+.parking-addcar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+}
+
+.parking-addcar-title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.parking-addcar-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-addcar-name::after {
+    content: 'My Car';
+    font-size: 15px;
+}
+
+.parking-addcar-chevron {
+    position: absolute;
+    background-color: transparent;
+    top: 23.5px;
+    border: none;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.parking-addcar-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.parking-addcar-search-main {
+    position: relative;
+    width: 100%;
+}
+
+.parking-addcar-search-main i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(95, 95, 93, 0.9);
+    font-size: 20px;
+    
+}
+
+#parking-addcar-search {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
+    padding-left: 45px;
+    width: 100%;
+    border: none;
+    color: rgb(95, 95, 93, 0.9);
+}
+
+#parking-addcar-search::placeholder {
+    opacity: 0.5;
+}
+
+#parking-addcar-search:focus {
+    outline: none;
+}
+
+.parking-addcar-body {
+    padding: 30px 30px;
+    margin-top: 4rem;
+    border-radius: 50px 50px 0px 0px;
+    background-color: white;
+    height: 604px;
+}
+
+.parking-addcar-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parking-addcar-result {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#parking-addcar-add {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: var(--secondary-color-1);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#parking-addcar-add:hover {
+    background-color: rgb(253, 110, 43, 0.8);
+    transform: scale(1.05);
+}
+
+#parking-addcar-add i {
+    font-size: 16px;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.parking-addcar-allcar {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 516px;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+.parking-addcar-mycar {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(179, 180, 173, 0.55);
+    padding: 0px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.parking-addcar-trash {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: var(--secondary-color-3);
+    border-radius: 50%;
+    padding: 2px 7px;
+    transition: all 0.3s ease;
+}
+
+.parking-addcar-trash:hover {
+    background-color: rgb(116, 141, 140, 0.8);
+    transform: scale(1.05);
+}
+
+.parking-addcar-car {
+    font-size: 85px;
+    color: white;
+    text-shadow: 0.5px 0 rgba(0, 0, 0, 0.493), -0.5px 0 rgba(0, 0, 0, 0.493), 0 0.5px rgba(0, 0, 0, 0.493), 0 -0.5px rgba(0, 0, 0, 0.493);
+}
+
+.parking-addcar-info {
+    gap: 2px;
+    margin-left: 12px;
+}
+
+#parking-addcar-registration {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#parking-addcar-status {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: white;
+    background-color: rgb(71, 51, 102, 0.77);
+    border-radius: 20px;
+}
+
+.parking-addcar-switch {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 25px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(120, 120, 120, 0.16);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(120, 120, 120, 0.16);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-addcar-body {
+        padding: 30px 30px;
+        margin-top: 4rem;
+        border-radius: 50px 50px 0px 0px;
+        background-color: white;
+        height: 612px;
+    }
+    .parking-addcar-allcar {
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 524px;
+        overflow-y: auto;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-addcar-body {
+        padding: 30px 30px;
+        margin-top: 4rem;
+        border-radius: 50px 50px 0px 0px;
+        background-color: white;
+        height: 686px;
+    }
+    .parking-addcar-allcar {
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 598px;
+        overflow-y: auto;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-addcar-body {
+        padding: 30px 30px;
+        margin-top: 4rem;
+        border-radius: 50px 50px 0px 0px;
+        background-color: white;
+        height: 784px;
+    }
+    .parking-addcar-allcar {
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 696px;
+        overflow-y: auto;
+        overflow: auto;
+    }
+}

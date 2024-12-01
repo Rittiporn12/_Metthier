@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #473366;
+    --secondary-color-1: #FD6E2B;
+    --secondary-color-2: #F2F2E6;
+    --secondary-color-3: #748D8C;
+    --secondary-color-4: #B3B4AD;
+    --secondary-color-5: #EBCFCD;
+}
+
+@font-face {
+    font-family: 'EnglishFont';
+    src: url('./assets/Font/ENG/Unbounded-Light-BF63e447c2db80e.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ThaiFont';
+    src: url('./assets/Font/TH/SukhumvitSet-Medium.ttf') format('truetype');
+}

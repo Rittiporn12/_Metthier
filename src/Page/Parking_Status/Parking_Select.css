@@ -1,0 +1,169 @@
+.parking-select-title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.parking-select-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-select-name::after {
+    content: 'Status';
+    font-size: 15px;
+}
+
+.parking-select-body {
+    padding: 0px 30px;
+    margin-top: 0.5rem;
+    background-color: white;
+    width: 100%;
+    height: 704px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.parking-select-body-title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: black;
+}
+
+#parking-select-body-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#parking-select-body-description {
+    font-size: 13px;
+}
+
+.parking-select-allcar {
+    width: 100%;
+    height: 516px;
+    overflow-y: auto;
+    overflow: auto;
+}
+
+.parking-select-mycar {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(179, 180, 173, 0.55);
+    padding: 0px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.parking-select-chevron {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.493);
+    text-shadow:
+        1px 0 rgba(0, 0, 0, 0.493),
+        -1px 0 rgba(0, 0, 0, 0.493),
+        0 1px rgba(0, 0, 0, 0.493),
+        0 -1px rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px 7px;
+}
+
+.parking-select-chevron i {
+    font-size: 25px;
+}
+
+.parking-select-qrcode {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: var(--secondary-color-3);
+    border-radius: 50%;
+    padding: 2px 7px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.parking-select-qrcode:hover {
+    background-color: rgb(116, 141, 140, 0.8);
+    transform: scale(1.05);
+}
+
+.parking-select-car {
+    font-size: 85px;
+    color: white;
+    text-shadow: 0.5px 0 rgba(0, 0, 0, 0.493), -0.5px 0 rgba(0, 0, 0, 0.493), 0 0.5px rgba(0, 0, 0, 0.493), 0 -0.5px rgba(0, 0, 0, 0.493);
+}
+
+.parking-select-info {
+    gap: 2px;
+    margin-left: 12px;
+}
+
+#parking-select-registration {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#parking-select-status {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 20px;
+    color: white;
+    background-color: rgb(71, 51, 102, 0.77);
+    border-radius: 20px;
+}
+
+.modal-select-info-main {
+    margin-top: 2rem;
+    padding: 0px 15px;
+    margin-bottom: 2rem;
+}
+
+.modal-select-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 250px;
+    margin-top: 0.5rem;
+    background-color: var(--secondary-color-2);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-select-body {
+        padding: 0px 30px;
+        margin-top: 0.5rem;
+        background-color: white;
+        width: 100%;
+        height: 780px;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .parking-select-allcar {
+        padding: 10px 60px;
+    }
+}

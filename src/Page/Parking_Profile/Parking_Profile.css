@@ -1,0 +1,243 @@
+.parking-profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+}
+
+.parking-profile-title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.parking-profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-profile-name::after {
+    content: 'Profile';
+    font-size: 15px;
+}
+
+.parking-profile-profile {
+    font-size: 8rem;
+    text-shadow: 0px 0px 10px black;
+}
+
+.parking-profile-names {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+
+.parking-profile-phone {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#parking-profile-background {
+    width: 100%;
+    height: 100px;
+    border-radius: 100px 100px 0px 0px;
+    background-color: var(--secondary-color-1);
+}
+
+.parking-profile-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: white;
+    margin-top: -5.6rem;
+    z-index: 1;
+}
+
+#parking-profile-about {
+    font-size: 17px;
+    color: black;
+    opacity: 77%;
+    padding: 15px 40px;
+}
+
+#parking-myprofile-about {
+    font-size: 14px;
+    color: black;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    gap: 15px;
+    margin-top: -0.1rem;
+    padding: 0px 40px;
+    cursor: pointer;
+}
+
+#line_icon {
+    width: 22px;
+    height: 22px;
+}
+
+.profile-icon-profile {
+    font-size: 20px;
+}
+
+.chevron-icon-profile {
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+    color: gray;
+    text-shadow: 1px 0 gray, -1px 0 gray, 0 1px gray, 0 -1px gray;
+}
+
+.parking-profile-button {
+    padding: 0px 30px;
+}
+
+.parking-profile-logout {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #748D8C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.parking-profile-logout:hover {
+    background-color: #748d8cdc;
+}
+
+.parking-profile-logout-icon {
+    font-size: 20px;
+}
+
+.parking-profile-logout-chevron-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    color: white;
+    text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white;
+}
+
+.parking-profile-logout i {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-profile-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 380px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: white;
+        margin-top: -5.6rem;
+        z-index: 1;
+    }
+    
+    #parking-profile-about {
+        font-size: 17px;
+        color: black;
+        opacity: 77%;
+        padding: 15px 40px;
+    }
+    
+    #parking-myprofile-about {
+        font-size: 14px;
+        color: black;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        gap: 15px;
+        margin-top: -0.1rem;
+        padding: 0px 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-profile-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: white;
+        margin-top: -5.6rem;
+        z-index: 1;
+    }
+    
+    #parking-profile-about {
+        font-size: 17px;
+        color: black;
+        opacity: 77%;
+        margin-top: 1rem;
+        padding: 15px 40px;
+    }
+    
+    #parking-myprofile-about {
+        font-size: 14px;
+        color: black;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        gap: 15px;
+        margin-top: 0.5rem;
+        padding: 0px 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-profile-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 550px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: white;
+        margin-top: -5.6rem;
+        z-index: 1;
+    }
+    
+    #parking-profile-about {
+        font-size: 17px;
+        color: black;
+        opacity: 77%;
+        margin-top: 3rem;
+        padding: 15px 40px;
+    }
+    
+    #parking-myprofile-about {
+        font-size: 14px;
+        color: black;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        gap: 15px;
+        margin-top: 1rem;
+        padding: 0px 40px;
+        cursor: pointer;
+    }
+}

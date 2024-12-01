@@ -1,0 +1,325 @@
+body {
+    font-family: 'EnglishFont', 'ThaiFont', sans-serif;
+    background-color: rgba(128, 128, 128, 0.192);
+    user-select: none;
+}
+
+.parking-status-container {
+    position: relative;
+    background-color: var(--primary-color);
+    height: 86.5%;
+}
+
+.parking-status-title {
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.parking-status-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-status-name::after {
+    content: 'Status';
+    font-size: 15px;
+}
+
+.parking-status-chevron {
+    position: absolute;
+    background-color: transparent;
+    top: 23.5px;
+    border: none;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.parking-status-body {
+    margin-top: -90px;
+}
+
+.parking-status-img {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 230px;
+}
+
+.parking-status-regis {
+    padding: 0px 130px;
+}
+
+.parking-status-registration {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #748D8C;
+    border-radius: 50px;
+    margin-top: -4.5rem;
+    color: white;
+}
+
+#parking-status-registration {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parking-status-time {
+    font-family: 'ThaiFont', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: -1rem;
+    color: white;
+    text-align: center;
+}
+
+.parking-status-zone {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+
+}
+
+#parking-status-zone-name {
+    color: #929292;
+    font-size: 20px;
+}
+
+#parking-status-zone-name-under {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parking-status-footer {
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 25px;
+    height: 310px;
+}
+
+.parking-status-footer-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#parking-status-footer-front {
+    font-size: 13px;
+    color: #787878;
+}
+
+#parking-status-footer-under {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FD6E2B;
+}
+
+.parking-status-footer-price {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: -1rem;
+}
+
+#parking-status-footer-price {
+    font-size: 13px;
+    color: #787878;
+}
+
+#parking-status-footer-discount {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: #FD6E2B;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#parking-status-footer-amount {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: #FD6E2B;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.parking-status-payment {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#parking-status-payment {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #473366;
+    transition: background-color 0.3s ease;
+}
+
+#parking-status-payment:hover {
+    background-color: #7152a0;
+}
+
+#car-payment {
+    position: absolute;
+    font-size: 25px;
+    margin-left: -0.5rem;
+    margin-top: -0.25rem;
+}
+
+.parking-status-traffic {
+    position: absolute;
+    top: 9rem;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #748D8C;
+    border: none;
+    transition: scale 0.3s ease, background-color 0.3s ease;
+}
+
+.parking-status-traffic:hover {
+    background-color: #748d8cbe;
+    scale: 1.1;
+}
+
+.parking-status-traffic img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-status-footer {
+        background-color: white;
+        border-radius: 30px 30px 0px 0px;
+        margin-top: 25px;
+        height: 318px;
+    }
+    
+    .parking-status-footer-display {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    
+    .parking-status-traffic {
+        position: absolute;
+        top: 9rem;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #748D8C;
+        border: none;
+        transition: scale 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .parking-status-regis {
+        padding: 0px 130px;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-status-footer {
+        background-color: white;
+        border-radius: 30px 30px 0px 0px;
+        margin-top: 25px;
+        height: 392px;
+    }
+    
+    .parking-status-footer-display {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+    
+    .parking-status-traffic {
+        position: absolute;
+        top: 9rem;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #748D8C;
+        border: none;
+        transition: scale 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .parking-status-regis {
+        padding: 0px 130px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-status-footer {
+        background-color: white;
+        border-radius: 30px 30px 0px 0px;
+        margin-top: 25px;
+        height: 490px;
+    }
+    
+    .parking-status-footer-display {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 60px 70px;
+    }
+
+    .parking-status-footer-price {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0px 70px;
+        margin-top: -1rem;
+    }
+    
+    .parking-status-traffic {
+        position: absolute;
+        top: 9rem;
+        right: 100px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #748D8C;
+        border: none;
+        transition: scale 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .parking-status-regis {
+        padding: 0px 300px;
+    }
+}

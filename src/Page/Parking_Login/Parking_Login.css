@@ -1,0 +1,249 @@
+.parking-login-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px 20px;
+    gap: 0.5rem;
+}
+
+#parking-login-header {
+    font-size: 12px;
+    color: white;
+}
+
+#parking-login-signup {
+    background-color: rgb(255, 255, 255, 0.55);
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    transition: background-color 0.3s ease;
+}
+
+#parking-login-signup:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.parking-login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+.parking-login-logo img {
+    margin-top: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.parking-login-background {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100px;
+    border-radius: 100px 100px 0px 0px;
+    background-color: var(--secondary-color-1);
+}
+
+.parking-login-body {
+    margin-top: -5.5rem;
+    width: 100%;
+    height: 501px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: white;
+}
+
+.parking-login-body-about {
+    padding: 40px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#parking-login-body-name {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+#parking-login-body-description {
+    font-size: 15px;
+    color: #787878;
+}
+
+.parking-login-body-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 50px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.parking-login-body-user {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 15px;
+    border: 1px solid #787878;
+}
+
+#parking-login-body-user:focus {
+    outline: none;
+}
+
+#parking-login-body-username {
+    color: #787878;
+    margin-top: -4.1rem;
+    margin-left: 0.7rem;
+    background-color: white;
+    padding: 0px 5px;
+}
+.parking-login-body-forgot {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 50px;
+    margin-top: -1rem;
+}
+
+#parking-login-body-forgot {
+    color: #007AFF;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.parking-login-body-button {
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#parking-login-body-signin {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+#parking-login-body-signin:hover {
+    background-color: #7152a0;
+}
+
+#parking-login-body-signin i {
+    color: white;
+    margin-right: 9px;
+}
+
+#parking-login-body-signin-line {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color-3);
+    transition: background-color 0.3s ease;
+}
+
+#parking-login-body-signin-line:hover {
+    background-color: rgb(116, 141, 140, 0.8);
+}
+
+#parking-login-body-signin-line img {
+    width: 7%;
+    height: auto;
+    margin-right: 6px;
+}
+
+.parking-login-footer-team {
+    display: flex;
+    position: absolute;
+    margin-top: -48.5rem;
+    margin-left: 1rem;
+    padding: 0px 5px;
+}
+
+#parking-login-team {
+    border: none;
+    background-color: var(--secondary-color-1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#parking-login-team:hover {
+    background-color: #ff5b0f;;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-login-body {
+        height: 508px;
+    }
+    .parking-login-footer-team {
+        margin-top: -48.5rem;
+    }
+}
+
+@media screen and (min-width: 426px) and (min-height: 926px) {
+    .parking-login-body {
+        height: 563px;
+    }
+    .parking-login-footer-team {
+        margin-top: -50rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-login-body {
+        height: 476px;
+    }
+    .parking-login-body-about {
+        padding: 30px 0px;
+    }
+    .parking-login-body-input {
+        padding: 0px 100px;
+    }
+    .parking-login-body-forgot {
+        padding: 0px 100px;
+    }
+    .parking-login-body-button {
+        padding: 0px 100px;
+    }
+    #parking-login-body-signin-line img {
+        width: 4%;
+        height: auto;
+        margin-right: 6px;
+    }
+    .parking-login-footer-team {
+        margin-top: -60rem;
+    }
+}

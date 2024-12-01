@@ -1,0 +1,128 @@
+.parking-account-title {
+  text-align: center;
+  color: white;
+  padding: 30px 20px;
+}
+
+.parking-account-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.parking-account-name::after {
+  content: "Account Security";
+  font-size: 15px;
+}
+
+.parking-account-chevron {
+  position: absolute;
+  background-color: transparent;
+  top: 23.5px;
+  border: none;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.parking-account-background {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100px;
+  border-radius: 100px 100px 0px 0px;
+  background-color: var(--secondary-color-1);
+}
+
+.parking-account-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -1.5rem;
+}
+
+.parking-account-logo img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.parking-account-body {
+    margin-top: -5rem;
+    width: 100%;
+    height: 461px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: var(--secondary-color-2);
+}
+
+.parking-account-body-name {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#parking-account-body-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.parking-account-body-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parking-account-left-section {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.global-icon {
+    font-size: 30px;
+}
+
+#parking-account-text {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+#parking-account-text-01 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgb(0, 0, 0, 0.55);
+}
+
+#parking-account-about {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 0px 40px;
+    cursor: pointer;
+}
+
+.chevron-icon-account {
+    font-size: 30px;
+    color: gray;
+    text-shadow: 1px 0 gray, -1px 0 gray, 0 1px gray, 0 -1px gray;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-account-body {
+        height: 467px;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-account-body {
+        height: 520px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-account-body {
+        height: 409px;
+    }
+}

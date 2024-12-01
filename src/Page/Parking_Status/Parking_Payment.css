@@ -1,0 +1,380 @@
+.parking-payment-title {
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.parking-payment-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-payment-name::after {
+    content: 'Payment';
+    font-size: 15px;
+}
+
+.parking-payment-chevron {
+    position: absolute;
+    background-color: transparent;
+    top: 23.5px;
+    border: none;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+.parking-payment-thaiqr{
+    width: 100%;
+    height: 600px;
+    margin-top: 7rem;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--secondary-color-2);
+    padding: 0px 60px;
+}
+
+.parking-payment-qrcode {
+    padding: 0px 60px;
+}
+
+#parking-payment-qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 250px;
+    margin-top: -40.5rem;
+}
+
+.parking-payment-qrcode-thai {
+    padding: 0px 60px;
+}
+
+#parking-payment-qrcode-thai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A3761;
+    border-radius: 20px 20px 0px 0px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    width: 100%;
+    height: 60px;
+    margin-top: -19rem;
+}
+
+#parking-payment-qrcode-thai img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.parking-payment-qrcode-bg {
+    padding: 0px 60px;
+}
+
+#parking-payment-qrcode-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 15rem;
+}
+
+.parking-payment-qrcode-about {
+    padding: 0px 20px;
+}
+
+#parking-payment-qrcode-bg-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+#parking-payment-qrcode-bg-name span {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#parking-payment-qrcode-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+#parking-payment-qrcode-total {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#parking-payment-qrcode-amount {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--secondary-color-1);
+}
+
+#parking-payment-qrcode-about-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+#parking-payment-qrcode-timeleftall {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#parking-payment-qrcode-timeleft {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--secondary-color-1);
+}
+
+#parking-payment-qrcode-about-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+#parking-payment-qrcode-timeleftall-2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#parking-payment-qrcode-timeleft-2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--secondary-color-1);
+}
+
+.parking-payment-qrcode-saveqr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+#parking-payment-qrcode-saveqr {
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid var(--secondary-color-1);
+    background-color: white;
+    width: 100%;
+    color: var(--secondary-color-1);
+    border-radius: 10px;
+    padding: 5px 0px;
+    transition: background-color 0.3s ease;
+}
+
+.parking-payment-qrcode-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+#parking-payment-qrcode-confirm {
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: var(--secondary-color-1);
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 0px;
+    transition: background-color 0.3s ease;
+}
+
+#parking-payment-qrcode-confirm:hover {
+    background-color: rgb(253, 110, 43, 0.8);
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-payment-thaiqr{
+        width: 100%;
+        height: 608px;
+        margin-top: 7rem;
+        border-radius: 20px 20px 0px 0px;
+        background-color: var(--secondary-color-2);
+        padding: 0px 60px;
+    }
+    
+    .parking-payment-qrcode-about {
+        padding: 0px 20px;
+    }
+    
+    #parking-payment-qrcode-about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 1rem;
+    }
+    
+    .parking-payment-qrcode-thai {
+        padding: 0px 60px;
+    }
+    
+    #parking-payment-qrcode-thai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1A3761;
+        border-radius: 20px 20px 0px 0px;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+        width: 100%;
+        height: 60px;
+        margin-top: -19rem;
+    }
+    
+    .parking-payment-qrcode {
+        padding: 0px 60px;
+    }
+}
+
+@media screen and (min-width: 428px) and (min-height: 926px) {
+    .parking-payment-thaiqr{
+        width: 100%;
+        height: 681px;
+        margin-top: 7rem;
+        border-radius: 20px 20px 0px 0px;
+        background-color: var(--secondary-color-2);
+        padding: 0px 60px;
+    }
+    
+    .parking-payment-qrcode-about {
+        padding: 0px 20px;
+    }
+    
+    #parking-payment-qrcode-about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 1rem;
+    }
+    
+    .parking-payment-qrcode-thai {
+        padding: 0px 60px;
+    }
+
+    #parking-payment-qrcode {
+        margin-top: -45rem;
+    }
+    
+    #parking-payment-qrcode-thai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1A3761;
+        border-radius: 20px 20px 0px 0px;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+        width: 100%;
+        height: 60px;
+        margin-top: -19rem;
+    }
+    
+    .parking-payment-qrcode {
+        padding: 0px 60px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-payment-thaiqr{
+        width: 100%;
+        height: 681px;
+        margin-top: 7rem;
+        border-radius: 20px 20px 0px 0px;
+        background-color: var(--secondary-color-2);
+        padding: 0px 60px;
+    }
+    
+    .parking-payment-qrcode-about {
+        padding: 0px 90px;
+    }
+    
+    #parking-payment-qrcode-about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 1rem;
+    }
+    
+    .parking-payment-qrcode-thai {
+        padding: 0px 90px;
+    }
+
+    #parking-payment-qrcode {
+        margin-top: -45rem;
+    }
+    
+    #parking-payment-qrcode-thai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1A3761;
+        border-radius: 20px 20px 0px 0px;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top: 2px solid white;
+        width: 100%;
+        height: 60px;
+        margin-top: -19rem;
+    }
+
+    .parking-payment-qrcode-bg {
+        padding: 0px 90px;
+    }
+    
+    .parking-payment-qrcode {
+        padding: 0px 90px;
+    }
+}

@@ -1,0 +1,132 @@
+.parking-checkhistory-title {
+    text-align: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.parking-checkhistory-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.parking-checkhistory-name::after {
+    content: 'History';
+    font-size: 15px;
+}
+
+.parking-checkhistory-chevron {
+    position: absolute;
+    background-color: transparent;
+    top: 23.5px;
+    border: none;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0 white, -0.5px 0 white, 0 0.5px white, 0 -0.5px white;
+}
+
+#parking-checkhistory-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: -4.8rem;
+    color: white;
+    font-size: 160px;
+}
+
+.parking-checkhistory-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+    color: white;
+}
+
+#parking-checkhistory-main {
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: var(--secondary-color-1);
+    font-weight: bold;
+}
+
+.parking-checkhistory-background-main {
+    margin-top: 0rem;
+    width: 100%;
+    height: 510px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: var(--secondary-color-2);
+}
+
+.parking-checkhistory-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+#parking-checkhistory-name-bg {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#parking-checkhistory-description-bg {
+    font-size: 13px;
+    font-weight: normal;
+    color: #787878;
+}
+
+.parking-checkhistory-box-main {
+    padding: 0px 50px;
+}
+
+.parking-checkhistory-box {
+    margin-bottom: 0.45rem;
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid #878787;
+    border-radius: 10px;
+}
+
+#parking-checkhistory-box-name {
+    font-size: 12px;
+    color: #787878;
+}
+
+#parking-checkhistory-box-des {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (min-width: 393px) and (min-height: 852px) {
+    .parking-checkhistory-background-main {
+        margin-top: 0rem;
+        width: 100%;
+        height: 518px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: var(--secondary-color-2);
+    }
+}
+
+@media screen and (min-width: 426px) and (min-height: 926px) {
+    .parking-checkhistory-background-main {
+        margin-top: 0rem;
+        width: 100%;
+        height: 592px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: var(--secondary-color-2);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .parking-checkhistory-background-main {
+        margin-top: 0rem;
+        width: 100%;
+        height: 690px;
+        border-radius: 50px 50px 0px 0px;
+        background-color: var(--secondary-color-2);
+    }
+}
